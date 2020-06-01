@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Category | Name Blog</title>
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+		<meta content="width=device-width, initial-scale=1" name="viewport">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<meta property="og:title" content="Category" />
+		<meta property="og:type" content="" />
+		<meta property="og:url" content="" />
+		<meta property="og:image" content="assets/images/" />
+		<meta property="og:site_name" content="Name Blog" />
+		<meta property="og:locale" content="en_GB" />
+		<!-- Website Language (see here https://stackoverflow.com/questions/3191664/list-of-all-locales-and-their-short-codes) -->
+		<link href="assets/images/" rel="shortcut icon">
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="assets/css/style.min.css">
+		<link rel="stylesheet" href="assets/css/font-awesome-all.min.css">
+	</head>
+
+	<body>
+		<header class="header ">
+			<a href="index.html" class="logo">Name <span>Blog</span></a>
+
+			<div class="burger" onclick="openNav(this)">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="articles-list.html">Articles</a></li>
+					<li><a href="about.html">About</a></li>
+
+					<li class="search">
+						<div class="btn-search" onclick="openSearch(this)"><i class="fas fa-search"></i></div>
+						<div class="search-container">
+							<i class="fas fa-times" onclick="closeSearch(this)"></i>
+							<div class="content">
+								<div class="input-search-container">
+									<input type="text" placeholder="Search here">
+								</div>
+
+								<ul class="tags">
+									<li><a href="category.html">Category featured</a></li>
+									<li><a href="categories-list.html"></a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="cover ">
+			<div class="bg-cover">
+				<picture>
+					<source media="(max-width: 600px)" srcset="assets/images/s-cover.jpg">
+					<source media="(max-width: 1024px)" srcset="assets/images/m-cover.jpg">
+					<img src="assets/images/l-cover.jpg" alt="Alt">
+				</picture>
+			</div>
+
+			<div class="content">
+
+				<h1>Category</h1>
+				<ul class="breadcrumbs">
+					<li><a href="index.html">Home</a></li>
+					<li>Category</li>
+				</ul>
+			</div>
+		</div>
+
+		<main class="container">
+			<div class="content-container">
+				<div class="col-content ">
+					<div class="author-bio">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultricies nec odio a rutrum.
+							Ut condimentum porttitor lectus eu feugiat. Sed tincidunt eleifend mattis. Duis sem velit,
+							euismod at consectetur vitae, viverra ac massa. In eros sapien, mollis et leo non, efficitur
+							varius sem. Quisque consequat aliquam tellus, non suscipit tortor luctus quis. Pellentesque
+							libero odio, vestibulum quis magna non, rutrum gravida ante. Suspendisse vel elit tortor.
+						</p>
+					</div>
+
+					<ul class="articles-list">
+						<li>
+							<a href="article.html" class="picture-article">
+								<picture>
+									<source media="(max-width: 600px)" srcset="assets/images/s-cover.jpg">
+									<source media="(max-width: 1024px)" srcset="assets/images/m-cover.jpg">
+									<img src="assets/images/l-cover.jpg" alt="Alt picture">
+								</picture>
+
+								<div class="meta">
+									<span>25</span>
+									<p>
+										May
+										<br />
+										2020
+									</p>
+								</div>
+							</a>
+
+							<div class="content">
+								<p class="title"><a href="article.html">Title</a></p>
+								<div class="excerpt">Heading 3 Heading 4 Heading 5 Heading 6 Lorem ipsum dolor sit a...
+								</div>
+								<a href="article.html" class="btn btn-read">Read the article</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+
+				<aside>
+					<div class="list-aside">
+						<h5>Categories</h5>
+						<ul>
+							<li><a href="category.html">Category</a></li>
+						</ul>
+					</div>
+					
+					<div class="list-aside">
+						<h5>Our authors</h5>
+						<ul>
+							<li><a href="author.html">Author</a></li>
+						</ul>
+					</div>
+				</aside>
+			</div>
+		</main>
+
+		<footer>
+			<p class="logo">Name <span>Blog</span></p>
+			<ul class="social">
+				<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+			</ul>
+		</footer>
+
+		<script src="assets/js/script.js"></script>
+	</body>
+</html>
